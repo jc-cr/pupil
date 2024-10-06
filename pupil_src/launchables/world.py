@@ -336,6 +336,7 @@ def world(
             ("Accuracy_Visualizer", {}),
             ("Plugin_Manager", {}),
             ("System_Graphs", {}),
+            ("Surface_Tracker_Online", {}), # Load surface tracker on boot
         ]
 
         def consume_events_and_render_buffer():

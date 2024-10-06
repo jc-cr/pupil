@@ -29,7 +29,7 @@ from .surface_marker_detector import (
 logger = logging.getLogger(__name__)
 
 DEFAULT_DETECTOR_MODE = MarkerDetectorMode(
-    MarkerType.APRILTAG_MARKER, ApriltagFamily.tag36h11
+    MarkerType.APRILTAG_MARKER, ApriltagFamily.tagStandard41h12
 )
 
 APRILTAG_SHARPENING_ON = 1.0
