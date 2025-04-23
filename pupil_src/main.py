@@ -33,17 +33,7 @@ default_args = {
 parsed_args, unknown_args = PupilArgParser().parse(running_from_bundle, **default_args)
 
 # app version
-from version_utils import get_version
-
-app_version = get_version()
-if parsed_args.version:
-    running_from = "bundle" if running_from_bundle else "source"
-    version_message = (
-        f"Pupil {parsed_args.app.capitalize()} version {app_version} ({running_from})"
-    )
-
-    print(version_message)
-    sys.exit()
+app_version = None
 
 
 def set_bundled_glfw_environ_var():
